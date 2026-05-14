@@ -68,7 +68,7 @@
       --kh-cream-deep: #e8dfd2;
       --kh-chocolate: #2a1810;
       --kh-chocolate-muted: #5c4336;
-      --kh-gold: #d4af37;
+      --kh-gold: #8f6a33; /* matches live site "body work" — var(--kh-gold-deep) in krowned-hands/globals.css */
       isolation: isolate;
       max-width: 72rem;
       margin: clamp(1.25rem, 3vw, 2rem) auto 4rem;
@@ -99,8 +99,6 @@
       object-fit: contain;
       object-position: left center;
       margin-bottom: 1rem;
-      /* Logo asset has a solid black plate; screen knocks pure black out over the cream panel */
-      mix-blend-mode: screen;
     }
     .latest-work-kh__eyebrow {
       font-family: 'Oswald', sans-serif;
@@ -117,7 +115,6 @@
       font-size: clamp(1.65rem, 3.2vw, 2.25rem);
       line-height: 1.2;
       color: var(--kh-gold);
-      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
       margin: 0 0 0.35rem;
     }
     .latest-work-kh__tag {
