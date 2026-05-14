@@ -68,9 +68,10 @@
       --kh-cream-deep: #e8dfd2;
       --kh-chocolate: #2a1810;
       --kh-chocolate-muted: #5c4336;
+      --kh-gold: #d4af37;
       isolation: isolate;
       max-width: 72rem;
-      margin: 0 auto 4rem;
+      margin: clamp(1.25rem, 3vw, 2rem) auto 4rem;
       padding: clamp(1.75rem, 4vw, 2.75rem);
       border-radius: 18px;
       background:
@@ -115,7 +116,8 @@
       font-weight: 400;
       font-size: clamp(1.65rem, 3.2vw, 2.25rem);
       line-height: 1.2;
-      color: var(--kh-chocolate);
+      color: var(--kh-gold);
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
       margin: 0 0 0.35rem;
     }
     .latest-work-kh__tag {
@@ -178,12 +180,6 @@
       height: auto;
       display: block;
       vertical-align: top;
-    }
-    .latest-work-kh__caption {
-      margin: 0.5rem 0 0;
-      font-size: 0.78rem;
-      color: var(--kh-chocolate-muted);
-      letter-spacing: 0.02em;
     }
 
     /* ── Nav ── */
@@ -1116,27 +1112,6 @@
         <p class="product-thinking-copy">This process involves mind mapping flows and relationships: user-centered modules and testing that help shape the UI and overall user experience. This guides visual design and instructs brand cohesion, ensuring a seamless user journey.</p>
       </div>
 
-      <article class="latest-work-kh scroll-reveal" aria-labelledby="latest-work-kh-heading">
-        <div class="latest-work-kh__grid">
-          <div class="latest-work-kh__copy">
-            <img class="latest-work-kh__mark" src="assets/ui-ux/krowned-hands-mark.png" width="112" height="112" alt="Krowned Hands mark" loading="lazy">
-            <p class="latest-work-kh__eyebrow">Latest work</p>
-            <h2 id="latest-work-kh-heading" class="latest-work-kh__title">Krowned Hands</h2>
-            <p class="latest-work-kh__tag">Mobile massage · Kingston &amp; Montego Bay</p>
-            <p class="latest-work-kh__lead">A warm, premium one-page experience for Jordan’s mobile massage practice: clear session framing, trust-led typography, and a soft cream palette that mirrors the brand identity.</p>
-            <div class="latest-work-kh__actions">
-              <a class="latest-work-kh__cta" href="https://www.krownedhands.com/" target="_blank" rel="noopener noreferrer">Visit live site</a>
-            </div>
-          </div>
-          <figure class="latest-work-kh__visual">
-            <a href="https://www.krownedhands.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Krowned Hands website">
-              <img src="assets/ui-ux/krowned-hands-hero.png" alt="Krowned Hands: Jordan providing therapeutic massage in a bright studio setting." loading="lazy">
-            </a>
-            <figcaption class="latest-work-kh__caption">Session photography and narrative used across the live site.</figcaption>
-          </figure>
-        </div>
-      </article>
-
       <h2 class="case-studies-title">Case Studies</h2>
 
       <div class="case-study-cards">
@@ -1160,6 +1135,26 @@
           </div>
         </div>
       </div>
+
+      <article class="latest-work-kh scroll-reveal" aria-labelledby="latest-work-kh-heading">
+        <div class="latest-work-kh__grid">
+          <div class="latest-work-kh__copy">
+            <img class="latest-work-kh__mark" src="assets/ui-ux/krowned-hands-mark.png" width="112" height="112" alt="Krowned Hands mark" loading="lazy">
+            <p class="latest-work-kh__eyebrow">Latest work</p>
+            <h2 id="latest-work-kh-heading" class="latest-work-kh__title">Krowned Hands</h2>
+            <p class="latest-work-kh__tag">Mobile massage · Kingston &amp; Montego Bay</p>
+            <p class="latest-work-kh__lead">A warm, premium one-page experience for Jordan’s mobile massage practice: clear session framing, trust-led typography, and a soft cream palette that mirrors the brand identity.</p>
+            <div class="latest-work-kh__actions">
+              <a class="latest-work-kh__cta" href="https://www.krownedhands.com/" target="_blank" rel="noopener noreferrer">Visit live site</a>
+            </div>
+          </div>
+          <div class="latest-work-kh__visual">
+            <a href="https://www.krownedhands.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Krowned Hands website">
+              <img src="assets/ui-ux/krowned-hands-hero.png" alt="Krowned Hands: Jordan providing therapeutic massage in a bright studio setting." loading="lazy">
+            </a>
+          </div>
+        </div>
+      </article>
 
       <!-- Detail panel: single expanding area below the cards -->
       <div class="detail-panel-wrap" id="detail-panel-wrap">
